@@ -1,96 +1,81 @@
-<a href="https://demo-nextjs-with-supabase.vercel.app/">
-  <img alt="Next.js and Supabase Starter Kit - the fastest way to build apps with Next.js and Supabase" src="https://demo-nextjs-with-supabase.vercel.app/opengraph-image.png">
-  <h1 align="center">Next.js and Supabase Starter Kit</h1>
-</a>
+# QNBA – AI-Powered NBA Web Application
 
-<p align="center">
- The fastest way to build apps with Next.js and Supabase
-</p>
+QNBA is a full-stack web application focused on NBA data, interactive basketball features, and AI-powered functionality.
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#demo"><strong>Demo</strong></a> ·
-  <a href="#deploy-to-vercel"><strong>Deploy to Vercel</strong></a> ·
-  <a href="#clone-and-run-locally"><strong>Clone and run locally</strong></a> ·
-  <a href="#feedback-and-issues"><strong>Feedback and issues</strong></a>
-  <a href="#more-supabase-examples"><strong>More Examples</strong></a>
-</p>
-<br/>
+The project was developed as a university software project and combines web development, sports data, machine learning experiments, and AI features in a single application.
+
+## Live Demo
+
+https://ipvo-projekt.vercel.app/
 
 ## Features
 
-- Works across the entire [Next.js](https://nextjs.org) stack
-  - App Router
-  - Pages Router
-  - Middleware
-  - Client
-  - Server
-  - It just works!
-- supabase-ssr. A package to configure Supabase Auth to use cookies
-- Styling with [Tailwind CSS](https://tailwindcss.com)
-- Components with [shadcn/ui](https://ui.shadcn.com/)
-- Optional deployment with [Supabase Vercel Integration and Vercel deploy](#deploy-your-own)
-  - Environment variables automatically assigned to Vercel project
+- AI-powered chatbot for NBA-related questions
+- NBA data integration through external APIs
+- Interactive NBA player guessing game
+- Player and basketball data visualization
+- Backend API routes for processing and serving application data
+- PostgreSQL database integration with Supabase
+- Machine learning experiments for NBA game predictions
+- Python-based data processing and ML pipelines
+- Containerized development using Docker
+- Deployment through Vercel
 
-## Demo
+## Tech Stack
 
-You can view a fully working demo at [demo-nextjs-with-supabase.vercel.app](https://demo-nextjs-with-supabase.vercel.app/).
+### Frontend & Backend
+- Next.js
+- TypeScript
+- React
+- Next.js API Routes
 
-## Deploy to Vercel
+### Database
+- PostgreSQL
+- Supabase
 
-Vercel deployment will guide you through creating a Supabase account and project.
+### AI & Machine Learning
+- AI/LLM API integration
+- Python
+- Scikit-learn
+- XGBoost
+- YOLO
 
-After installation of the Supabase integration, all relevant environment variables will be assigned to the project so the deployment is fully functioning.
+### DevOps & Tools
+- Docker
+- Docker Compose
+- GitHub Actions
+- Vercel
+- Git / GitHub
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&project-name=nextjs-with-supabase&repository-name=nextjs-with-supabase&demo-title=nextjs-with-supabase&demo-description=This+starter+configures+Supabase+Auth+to+use+cookies%2C+making+the+user%27s+session+available+throughout+the+entire+Next.js+app+-+Client+Components%2C+Server+Components%2C+Route+Handlers%2C+Server+Actions+and+Middleware.&demo-url=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2F&external-id=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&demo-image=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2Fopengraph-image.png)
+## Project Structure
 
-The above will also clone the Starter kit to your GitHub, you can clone that locally and develop locally.
+```text
+app/             Next.js application
+components/      Reusable UI components
+pages/api/       Backend API endpoints
+lib/             Shared application logic
+python/          Python data processing and ML code
+models/          Model-related functionality
+supabase/        Database configuration
+.github/         GitHub Actions workflows
+```
 
-If you wish to just develop locally and not deploy to Vercel, [follow the steps below](#clone-and-run-locally).
+## What I Worked On
 
-## Clone and run locally
+This project gave me hands-on experience building a larger full-stack application and connecting multiple technologies together.
 
-1. You'll first need a Supabase project which can be made [via the Supabase dashboard](https://database.new)
+My work included:
 
-2. Create a Next.js app using the Supabase Starter template npx command
+- Developing frontend and backend functionality with Next.js and TypeScript
+- Designing and implementing API routes
+- Integrating external NBA data sources
+- Working with PostgreSQL through Supabase
+- Implementing AI-powered functionality
+- Building interactive features such as an NBA player guessing game
+- Experimenting with machine learning models and data pipelines
+- Using Docker for containerization
+- Deploying and maintaining the application on Vercel
 
-   ```bash
-   npx create-next-app -e with-supabase
-   ```
+## Purpose
 
-3. Use `cd` to change into the app's directory
-
-   ```bash
-   cd name-of-new-app
-   ```
-
-4. Rename `.env.example` to `.env.local` and update the following:
-
-   ```
-   NEXT_PUBLIC_SUPABASE_URL=[INSERT SUPABASE PROJECT URL]
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=[INSERT SUPABASE PROJECT API ANON KEY]
-   ```
-
-   Both `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` can be found in [your Supabase project's API settings](https://app.supabase.com/project/_/settings/api)
-
-5. You can now run the Next.js local development server:
-
-   ```bash
-   npm run dev
-   ```
-
-   The starter kit should now be running on [localhost:3000](http://localhost:3000/).
-
-6. This template comes with the default shadcn/ui style initialized. If you instead want other ui.shadcn styles, delete `components.json` and [re-install shadcn/ui](https://ui.shadcn.com/docs/installation/next)
-
-> Check out [the docs for Local Development](https://supabase.com/docs/guides/getting-started/local-development) to also run Supabase locally.
-
-## Feedback and issues
-
-Please file feedback and issues over on the [Supabase GitHub org](https://github.com/supabase/supabase/issues/new/choose).
-
-## More Supabase examples
-
-- [Next.js Subscription Payments Starter](https://github.com/vercel/nextjs-subscription-payments)
-- [Cookie-based Auth and the Next.js 13 App Router (free course)](https://youtube.com/playlist?list=PL5S4mPUpp4OtMhpnp93EFSo42iQ40XjbF)
-- [Supabase Auth and the Next.js App Router](https://github.com/supabase/supabase/tree/master/examples/auth/nextjs)
+The goal of QNBA was to explore how traditional full-stack development can be combined with AI, machine learning, and sports data in an interactive web application.
