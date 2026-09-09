@@ -7,7 +7,19 @@ The project was developed as a university software project and combines web deve
 ## Live Demo
 
 https://ipvo-projekt.vercel.app/
+## Screenshots
 
+### Home
+![QNBA Home](screenshots/qnba-home.png)
+
+### Player Dashboard
+![QNBA Player Dashboard](screenshots/qnba-player-dashboard.png)
+
+### Daily NBA Challenge
+![QNBA Daily Challenge](screenshots/qnba-daily-challenge.png)
+
+### Player Profile & Analytics
+![QNBA Player Profile](screenshots/qnba-player-profile.png)
 ## Features
 
 - AI-powered chatbot for NBA-related questions
